@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="turn-off-appliances-container" style="display:flex;">
+        <h2>Turn Off Appliances</h2>
+        <p class="game-description"><strong>You have 30 seconds!</strong> In this game, you'll see various household items. Your goal is to turn off the appliances that consume energy to save power. Be careful, as some items do not need to be turned off! Turning on an appliance will subtract from your score. Let's see how energy efficient you can be!</p>
+        <div id="appliances-container"></div>
+        <div class="score-container">
+            <p id="totalScore">Score: 0</p>
+        </div>
+        <div id="timer-container">
+            <p id="timer">Time Left: 60s</p>
+        </div>
+    </div>
+
+
+    <div id="city-builder-container" style="display: none">
+        <h2>Green City Builder</h2>
+        <p class="game-description">Welcome to Green City Builder! In this game, you can design a sustainable city by selecting various options that either positively or negatively impact the environment. Each choice affects your score and budget. Your goal is to maximize your score while managing your coins wisely. Click on the grid to place your chosen options and see how sustainable your city can be!</p>
+        <div id="grid-container"></div>
+        <div id="options-container">
+            <button class="option-btn" data-type="positive" data-score="10" data-cost="10">🌳</button>
+            <button class="option-btn" data-type="positive" data-score="10" data-cost="15">🌞</button>
+            <button class="option-btn" data-type="positive" data-score="10" data-cost="5">🚴</button>
+            <button class="option-btn" data-type="positive" data-score="10" data-cost="10">🏡</button>
+            <button class="option-btn" data-type="positive" data-score="10" data-cost="5">♻️</button>
+            <button class="option-btn" data-type="negative" data-score="-10" data-cost="-5">🚗</button>
+            <button class="option-btn" data-type="negative" data-score="-10" data-cost="-10">🏭</button>
+            <button class="option-btn" data-type="negative" data-score="-10" data-cost="-5">🛣️</button>
+            <button class="option-btn" data-type="negative" data-score="-10" data-cost="-5">⛽</button>
+            <button class="option-btn" data-type="negative" data-score="-10" data-cost="-5">🗑️</button>
+        </div>
+        <div class="score-container">
+            <p id="score">Score: 0</p>
+            <p id="money">Coins: 50</p>
+        </div>
+        <table id="emoji-info">
+            <thead>
+                <tr>
+                    <th>Emoji</th>
+                    <th>Points</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>🌳</td>
+                    <td>+10</td>
+                    <td>-10</td>
+                </tr>
+                <tr>
+                    <td>🌞</td>
+                    <td>+10</td>
+                    <td>-15</td>
+                </tr>
+                <tr>
+                    <td>🚴</td>
+                    <td>+10</td>
+                    <td>-5</td>
+                </tr>
+                <tr>
+                    <td>🏡</td>
+                    <td>+10</td>
+                    <td>-10</td>
+                </tr>
+                <tr>
+                    <td>♻️</td>
+                    <td>+10</td>
+                    <td>-5</td>
+                </tr>
+                <tr>
+                    <td>🚗</td>
+                    <td>-10</td>
+                    <td>+5</td>
+                </tr>
+                <tr>
+                    <td>🏭</td>
+                    <td>-10</td>
+                    <td>+10</td>
+                </tr>
+                <tr>
+                    <td>🛣️</td>
+                    <td>-10</td>
+                    <td>+5</td>
+                </tr>
+                <tr>
+                    <td>⛽</td>
+                    <td>-10</td>
+                    <td>+5</td>
+                </tr>
+                <tr>
+                    <td>🗑️</td>
+                    <td>-10</td>
+                    <td>+5</td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="resetButton">Restart Game</button>
+    </div>
+
+    <script src="sorter.js"></script>
+
+</body>
+</html>

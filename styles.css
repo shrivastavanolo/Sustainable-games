@@ -1,0 +1,193 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e0f7fa;
+  margin: 20px;
+  padding: 20px;
+}
+
+#score, #scoreDisplay, #scoreValue, #money, .score-container {
+  color:#45a049;
+  font-size: 24px;
+  /* margin: auto; */
+}
+
+#item-container, #options-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  /* height: 120px; */
+}
+
+button {
+  height: fit-content;
+  width:fit-content;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.game-description{
+  width:fit-content;
+  max-width: 700px;
+  text-align: justify;
+
+}
+
+#appliances-container {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  gap: 10px;
+  margin: auto;
+}
+
+.appliance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid #c8e6c9;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, filter 0.3s ease;
+}
+
+.appliance span {
+  font-size: 48px; /* Increased size for larger emojis */
+}
+
+.appliance p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.appliance.on {
+  filter: brightness(1);
+}
+
+.appliance.off {
+  filter: brightness(0.5);
+}
+
+#restartGameButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#restartGameButton:hover {
+  background-color: #45a049;
+}
+
+#timer {
+  font-size: 18px;
+  color: #333;
+}
+
+#turn-off-appliances-container, #city-builder-container{
+  flex-direction: column;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  background-color: #e8f5e9;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 40px); /* Adjusted for smaller cells */
+  grid-template-rows: repeat(5, 40px); /* Adjusted for smaller cells */
+  gap: 4px;
+  margin: 20px auto;
+  width: 440px; /* Adjusted width for 10 columns */
+  border: 3px solid #4CAF50;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.grid-cell {
+  width: 40px; /* Smaller size for cells */
+  height: 40px; /* Smaller size for cells */
+  background-color: #ffffff;
+  border: 2px solid #c8e6c9;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px; /* Adjusted font size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.option-btn {
+  margin: 5px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.option-btn:hover {
+  background-color: #45a049;
+}
+
+.option-btn.active {
+  background-color: #2e7d32;
+}
+
+#resetButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#resetButton:hover {
+  background-color: #45a049;
+}
+
+#emoji-info {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+}
+
+#emoji-info th, #emoji-info td {
+  border: 1px solid #4CAF50;
+  padding: 8px;
+  text-align: center;
+}
+
+#emoji-info th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#emoji-info td {
+  background-color: #e8f5e9;
+}
